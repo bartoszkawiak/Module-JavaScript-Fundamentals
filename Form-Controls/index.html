@@ -13,15 +13,43 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
+        <!--Customer name min 2 characters-->
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" minlength="2" required placeholder="Jon">
+        </div>
+        <!-- Email-->
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="email@email.com">
+        </div>
+        <!--Color 3 options radio-->
+        <div>
+          <label for="color">Color</label>
+          <input type="radio" name="color-selected" id="color-red" required value="red">
+          <input type="radio" name="color-selected" id="color-blue" value="blue">
+          <input type="radio" name="color-selected" id="color-white" value="white">
+        </div>
+        <!--Size 6 options select-->
+        <div>
+          <label for="size">Size</label>
+          <select>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select> 
+        </div>
+
+        <!--try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Bartosz Kawiak</p>
     </footer>
   </body>
 </html>
