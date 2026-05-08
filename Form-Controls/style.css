@@ -1,0 +1,89 @@
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    color: #111827;
+}
+
+
+h1{
+    padding: 10px;
+    margin: 10px;
+    color: #134e4a ;
+}
+
+div{
+    margin: 10px auto;
+    width: 40%;
+    padding:0 5px 10px;
+    display: block;
+    border: 1px solid #065f46;
+    border-radius: 10px;
+    background-color: #fff8dc;
+}
+
+label{
+    font-style: italic;
+    margin: 10px 5px ;
+    padding: 2px;
+    color: #111827;
+    display: inline-block;
+    width: 30px;
+}
+
+fieldset{
+    display: inline-block;
+    border: 2px solid #065f46;
+    border-radius: 10px;
+    padding: 5px 0 5px;
+    margin: 10px auto;
+    background-color: #fff8dc;
+    width: 40%;
+}
+
+legend{
+    font-size: larger;
+    font-weight: bold;
+    color: #111827;
+}
+
+input,
+select{
+    padding: 10px;
+    margin: 10px;
+}
+
+button{
+    margin: 10px 2px;
+    padding: 10px 20px;
+    font-size: large;
+    border: 2px solid #0f766e;
+    border-radius: 10px;
+    background-color: white;
+    color: #111827;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #fff8dc;
+    color: #134e4a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.20);
+}
+
+button:active{
+    transform: scale(0.90);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:focus{
+    outline: 2px solid #134e4a;
+    outline-offset: 2px;
+}
+
+
+footer{
+    color: #111827;
+    margin-top: 20px;
+}

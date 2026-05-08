@@ -6,6 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./style.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
         <!--Customer name min 2 characters-->
         <div>
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" minlength="2" required placeholder="Jon">
+          <input type="text" name="name" id="name" pattern="[A-Za-z]{2,}+( [A-Za-z]{2,})*" required placeholder="Jon Smith">
         </div>
         <!-- Email-->
         <div>
@@ -24,25 +25,33 @@
           <input type="email" name="email" id="email" required placeholder="email@email.com">
         </div>
         <!--Color 3 options radio-->
-        <div>
-          <label for="color">Color</label>
-          <input type="radio" name="color-selected" id="color-red" required value="red">
-          <input type="radio" name="color-selected" id="color-blue" value="blue">
-          <input type="radio" name="color-selected" id="color-white" value="white">
-        </div>
+        <fieldset>
+          <legend>Pick a color</legend>
+
+          <input type="radio" name="color" value="red" id="red" required>        
+          <label for="red">Red</label>
+
+          <input type="radio" name="color" value="blue" id="blue">
+          <label for="blue">Blue</label>
+
+          <input type="radio" name="color" value="white" id="white">
+          <label for="white">White</label>
+        </fieldset>
         <!--Size 6 options select-->
         <div>
           <label for="size">Size</label>
-          <select>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
+          <select name="size" id="size" required>
+            <option value="" disabled selected>Select a size</option>
+            <option value="XS" >XS</option>
+            <option value="S" >S</option>
+            <option value="M" >M</option>
+            <option value="L" >L</option>
+            <option value="XL" >XL</option>
+            <option value="XXL" >XXL</option>
           </select> 
         </div>
-
+          <button id="submit-btn" type="submit">Submit</button>
+          <button id="reset-btn" type="reset">Reset</button>
         <!--try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
       </form>
