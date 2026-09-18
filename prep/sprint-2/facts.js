@@ -1,0 +1,1 @@
+console.log("That's a fun fact!");
